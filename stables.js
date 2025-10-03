@@ -42,15 +42,6 @@
 //                                                         ####
 //                                                          ##
 //
-// This is a template for your labs and final project. You'll be setting up a stable and making
-// sure it runs smoothly.
-//
-// Please do not create a new file for each lab!
-// Feel free to keep the headings (e.g.: "Variables"), but please delete any boilerplate
-// comments. (Your own comments, where necessary, are acceptable.)
-//
-// NOTE: UNLESS SPECIFIED, VARIABLE NAMING IS UP TO YOU. THERE SHOULD BE NO HARD-CODED
-// NUMBERS OR STRINGS WHERE VARIBALES WOULD BE PREFERRED.
 
 //------------------------- Seting up shop (Lab #1, Week 3) -------------------------//
 
@@ -58,10 +49,8 @@ let horseName = "HayLeigh";
 let horseAge = 6;
 let isHorseInside = true;
 let monthlyBoardingFee = 250;
-let lateFee = 250 + 0.2 * 250;
+let lateFee = monthlyBoardingFee * 0.2;
 
-//
-// Create a variable and use it to store a message for visitors to the stable.
 let messageForVisitors =
     "This is my horse " +
     horseName +
@@ -71,15 +60,15 @@ let messageForVisitors =
     monthlyBoardingFee +
     " a month, with a late fee of 20%.";
 
-// Create a variable and use it to store a message that monthly payment is late, and the amount owing.
 let lateFeeMessage =
-    "Please be advised that we have not recieved payment for last month, your current balance is " +
-    lateFee +
-    ". This includes your monthly boarding fee of " +
+    "Please be advised that we have not recieved payment for " +
+    horseName +
+    " last month, your current balance is " +
+    (lateFee + monthlyBoardingFee);
+". This includes your monthly boarding fee of " +
     monthlyBoardingFee +
     " and the 20% late fee.";
-// Include the name of your horse in the message.
-console.log(lateFeeMessage);
+
 //------------------------- First day (Lab #2, Week 4) -------------------------//
 
 // Using an object, add at least 3 horses to your stables.
@@ -138,4 +127,3 @@ horseOneObj.isHungry = "true";
 horseTwoObj.isHungry = "false";
 horseThreeObj.isHungry = "true";
 horseFourObj.isHungry = "false";
-console.log(horses);
