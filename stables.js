@@ -108,6 +108,12 @@ let horseFourObj = {
     age: "12",
 };
 
+let horses = [horseOneObj, horseTwoObj, horseThreeObj, horseFourObj];
+horseOneObj.isHungry = "true";
+horseTwoObj.isHungry = "false";
+horseThreeObj.isHungry = "true";
+horseFourObj.isHungry = "false";
+
 //IN-CLASS UPDATED CODE//
 let horses = {
     Meera: {
@@ -154,10 +160,7 @@ let newHorse = {
 };
 
 horses.lourdes = newHorse;
-
 horses.Meera.isHungry = true;
 horses.Jihee.isHungry = false;
 horses.Sofie.isHungry = true;
 horses.lourdes.isHungry = false;
-
-console.log(horses);
