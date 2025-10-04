@@ -71,7 +71,6 @@ let lateFeeMessage =
 
 //------------------------- First day (Lab #2, Week 4) -------------------------//
 
-// Using an object, add at least 3 horses to your stables.
 let horseOneObj = {
     name: "Meera",
     nickname: "Doctor",
@@ -109,21 +108,60 @@ let horseFourObj = {
     age: "12",
 };
 
-// The horses should have the following properties:
-// - name, nickname, favorite treat (string)
-// - age, monthly rent (number)
-// - location (boolean inside/outside)
-// - two unique properties of your choice (use any primitive)
-
-// Store the horses you've just created in a "horses" variable.
-// Keep your old horse info from week one for now.
 let horses = [horseOneObj, horseTwoObj, horseThreeObj, horseFourObj];
-// Fancy! Another horse wants to be stabled! Create a variable that stores an object
-// literal of your new horse, and add it to your "horses" variable.
 
-// Initialize new property to your horses: a boolean that allows you to check if your horse
-// is hungry or not. Use dot notation.
 horseOneObj.isHungry = "true";
 horseTwoObj.isHungry = "false";
 horseThreeObj.isHungry = "true";
 horseFourObj.isHungry = "false";
+
+//IN-CLASS UPDATED CODE//
+let horses = {
+    Meera: {
+        name: "Meera",
+        nickname: "Doctor",
+        age: 4,
+        treat: "oreos",
+        isInside: false,
+        rent: 200,
+        sport: "polo",
+        mane: "braided",
+    },
+    Jihee: {
+        name: "Jihee",
+        nickname: "Zucchini",
+        age: 5,
+        treat: "dubai chocolate",
+        isInside: true,
+        rent: 150,
+        sport: "dressage",
+        mane: " braided",
+    },
+    Sofie: {
+        name: "Sofie",
+        nickname: "Mija",
+        age: 8,
+        treat: "ice cream",
+        isInside: false,
+        rent: 150,
+        sport: "rodeo",
+        mane: " unbraided",
+    },
+};
+
+let newHorse = {
+    name: "Lourdes",
+    nickname: "Lord",
+    age: 12,
+    treat: "caramel",
+    isInside: true,
+    rent: 100,
+    sport: "vaulting",
+    mane: "braided,",
+};
+
+horses.lourdes = newHorse;
+horses.meera.isHungry = true;
+horses.jihee.isHungry = false;
+horses.sofie.isHungry = true;
+horses.lourdes.isHungry = false;
