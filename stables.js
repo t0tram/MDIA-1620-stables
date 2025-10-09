@@ -45,74 +45,74 @@
 
 //------------------------- Seting up shop (Lab #1, Week 3) -------------------------//
 
-let horseName = "HayLeigh";
-let horseAge = 6;
-let isHorseInside = true;
-let monthlyBoardingFee = 250;
-let lateFee = monthlyBoardingFee * 0.2;
+// let horseName = "HayLeigh";
+// let horseAge = 6;
+// let isHorseInside = true;
+// let monthlyBoardingFee = 250;
+// let lateFee = monthlyBoardingFee * 0.2;
 
-let messageForVisitors =
-    "This is my horse " +
-    horseName +
-    ". She is " +
-    horseAge +
-    " years old. Welcome to our stable. You can store you horse here for " +
-    monthlyBoardingFee +
-    " a month, with a late fee of 20%.";
+// let messageForVisitors =
+//     "This is my horse " +
+//     horseName +
+//     ". She is " +
+//     horseAge +
+//     " years old. Welcome to our stable. You can store you horse here for " +
+//     monthlyBoardingFee +
+//     " a month, with a late fee of 20%.";
 
-let lateFeeMessage =
-    "Please be advised that we have not recieved payment for " +
-    horseName +
-    " last month, your current balance is " +
-    (lateFee + monthlyBoardingFee);
-". This includes your monthly boarding fee of " +
-    monthlyBoardingFee +
-    " and the 20% late fee.";
+// let lateFeeMessage =
+//     "Please be advised that we have not recieved payment for " +
+//     horseName +
+//     " last month, your current balance is " +
+//     (lateFee + monthlyBoardingFee);
+// ". This includes your monthly boarding fee of " +
+//     monthlyBoardingFee +
+//     " and the 20% late fee.";
 
-//------------------------- First day (Lab #2, Week 4) -------------------------//
+// //------------------------- First day (Lab #2, Week 4) -------------------------//
 
-let horseOneObj = {
-    name: "Meera",
-    nickname: "Doctor",
-    age: "4",
-};
-let horseTwoObj = {
-    name: "Jihee",
-    nickname: "Zucchini",
-    age: "5",
-};
-let horseThreeObj = {
-    name: "Sofie",
-    nickname: "Mija",
-    age: "8",
-};
-horseOneObj["monthlyRent"] = 200;
-horseTwoObj["monthlyRent"] = 150;
-horseThreeObj["monthlyRent"] = 150;
-horseOneObj.favTreat = "oreos";
-horseTwoObj.favTreat = "dubai chocolate";
-horseThreeObj.favTreat = "ice cream";
-let isHorseOneInside = "false";
-let isHorseTwoInside = "true";
-let isHorseThreeInside = "false";
-let horseOneWearsBraid = "true";
-let horseTwoWearsBraid = "true";
-let horseThreeWearsBraid = "false";
-horseOneObj.sport = "polo";
-horseTwoObj.sport = "dressage";
-horseThreeObj.sport = "rodeo";
+// let horseOneObj = {
+//     name: "Meera",
+//     nickname: "Doctor",
+//     age: "4",
+// };
+// let horseTwoObj = {
+//     name: "Jihee",
+//     nickname: "Zucchini",
+//     age: "5",
+// };
+// let horseThreeObj = {
+//     name: "Sofie",
+//     nickname: "Mija",
+//     age: "8",
+// };
+// horseOneObj["monthlyRent"] = 200;
+// horseTwoObj["monthlyRent"] = 150;
+// horseThreeObj["monthlyRent"] = 150;
+// horseOneObj.favTreat = "oreos";
+// horseTwoObj.favTreat = "dubai chocolate";
+// horseThreeObj.favTreat = "ice cream";
+// let isHorseOneInside = "false";
+// let isHorseTwoInside = "true";
+// let isHorseThreeInside = "false";
+// let horseOneWearsBraid = "true";
+// let horseTwoWearsBraid = "true";
+// let horseThreeWearsBraid = "false";
+// horseOneObj.sport = "polo";
+// horseTwoObj.sport = "dressage";
+// horseThreeObj.sport = "rodeo";
 
-let horseFourObj = {
-    name: "Lourdes",
-    nickname: "Lord",
-    age: "12",
-};
+// let horseFourObj = {
+//     name: "Lourdes",
+//     nickname: "Lord",
+//     age: "12",
+// };
 
-let horses = [horseOneObj, horseTwoObj, horseThreeObj, horseFourObj];
-horseOneObj.isHungry = "true";
-horseTwoObj.isHungry = "false";
-horseThreeObj.isHungry = "true";
-horseFourObj.isHungry = "false";
+// let horses = [horseOneObj, horseTwoObj, horseThreeObj, horseFourObj];
+// horseOneObj.isHungry = "true";
+// horseTwoObj.isHungry = "false";
+// horseThreeObj.isHungry = "true";
+// horseFourObj.isHungry = "false";
 
 //IN-CLASS UPDATED CODE//
 let horses = {
@@ -164,3 +164,18 @@ horses.Meera.isHungry = true;
 horses.Jihee.isHungry = false;
 horses.Sofie.isHungry = true;
 horses.lourdes.isHungry = false;
+
+//Week 6 Funtion examples vv
+function printHorseAge(horseAge, horseName) {
+    console.log(
+        horseName +
+            " is " +
+            horseAge +
+            " years old! Next year, they will be " +
+            (horseAge + 1) +
+            " years old!"
+    );
+}
+
+printHorseAge(12, "Khai");
+printHorseAge(horses.Meera.age, horses.Meera.name);
