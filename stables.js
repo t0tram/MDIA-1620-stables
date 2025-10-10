@@ -122,6 +122,38 @@ horses.Jihee.isHungry = false;
 horses.Sofie.isHungry = true;
 horses.lourdes.isHungry = false;
 
+//------------------------- Growing our business (Lab #2, Week 6) -------------------------//
+
+// Create a variable that stores your total number of stalls.
+let stableStalls = 6;
+// Create a function that logs out how many stalls are available, given how many horses you have in your stable.
+function availableStalls(stableStalls, occupiedStalls) {
+    let unoccupiedStalls = stableStalls - occupiedStalls;
+    console.log("There are currently " + unoccupiedStalls + " available.");
+}
+
+// Create a function that logs out how much will an individual horse will owe if rent is
+// paid late. Invoke the function.
+
+function lateFeeStatement(horse, rent, lateFee) {
+    let rentTotal = rent + lateFee;
+    console.log(
+        horse.name +
+            ", you haven't paid your monthly fee yet. You know owe " +
+            rentTotal
+    );
+}
+
+// Create and invoke a function that returns (not logs) the nickname of a chosen horse. Log out
+// the return value outside of the function.
+function getHorseNickname(horses) {
+    return horses.nickname;
+}
+
+availableStalls(6, 4);
+lateFeeStatement(horses.Meera, monthlyBoardingFee, lateFee);
+console.log(getHorseNickname(horses.Meera));
+
 // //Week 6 Funtion examples vv
 // function printHorseAge(horseAge, horseName) {
 //     console.log(
@@ -136,3 +168,29 @@ horses.lourdes.isHungry = false;
 
 // printHorseAge(12, "Khai");
 // printHorseAge(horses.Meera.age, horses.Meera.name);
+
+// let changer = " Hello world";
+// changer = " BYEEEEEEEEEEEEEE world";
+
+// const MONTHLY_RENT = 200;
+// function payMe(rent = MONTHLY_RENT) {
+//     console.log("You owe me " + rent + " dollars.");
+// }
+
+// payMe(1000);
+// payMe(200);
+// payMe();
+
+// function payMe(rent = MONTHLY_RENT) {
+//     let message = "You owe me " + rent + " dollars.";
+//     return message;
+// }
+// function payMe(rent = MONTHLY_RENT) {
+//     return "You owe me " + rent + " dollars.";
+// }
+// console.log(payMe());
+
+// //function payMeLateFees(lateFees) {
+//     let amount = "You owe me " + lateFees + " dollars.";
+//     return amount;
+// }
